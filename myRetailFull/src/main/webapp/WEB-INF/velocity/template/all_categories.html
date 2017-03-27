@@ -1,0 +1,18 @@
+<div>
+	<nav class="navbar-custom navbar-inverse navbar-static-top">
+	  <div class="container-fluid">
+	      <div class="navbar-header">
+	          <h6 class="main-header">MyRetail</h6>
+	      </div>
+	      <p class="navbar-text navbar-right pad-right-xs">Signed in as: <a href="#" class="navbar-link">Billy Everyteen</a></p>
+	  </div>
+	</nav>
+	<!-- Default panel contents -->
+	<div class="list-group-item active target-theme"><h4 class="list-group-item-heading">All Categories</h4>
+	 <li class="list-group-item" ng-repeat="category in ctgController.categories">{{item}}
+	 		<a class="list-group-item" ui-sref="category.list({categoryId:category})">{{category}}</a>
+	 </li>
+	</div>
+	<!-- Nested View -->
+    <div ui-view></div>
+</div>
